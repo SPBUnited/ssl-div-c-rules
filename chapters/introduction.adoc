@@ -1,22 +1,3 @@
 == League Overview
-=== Committees
-The Small Size League (like every other league of the RoboCup) is run by close cooperation of three different committees (<<Executive Committee, executive committee>>, <<Technical Committee, technical committee>> and <<Organizing Committee, organizing committee>>), all with a different set of responsibilities. The members of the respective committees can be found on the official RoboCup Small Size League website (https://ssl.robocup.org).
 
-NOTE: In practice, there is no strict separation between the <<Technical Committee, technical>> and the <<Organizing Committee, organizing committee>>. Members of both committees often work together on the joint set of tasks.
-
-Additionally, the members of the <<Local Organizing Committee, local organizing committee>> organize the RoboCup event for all leagues.
-
-==== Executive Committee
-Executive committee members are responsible for the long term goals of the Small Size League and thus have also contact to other leagues as well as to the RoboCup federation. The executive committee presents the Small Size League and its achievements to the RoboCup federation every year and gets feedback to organize the league. Executive committee members are elected by the board of trustees of the RoboCup federation. They serve 3-year terms.
-
-==== Technical Committee
-The technical committee of the Small Size League is responsible for the technical aspects of the RoboCup, such as maintaining the rules and the shared software. All members are elected by the team leaders of the teams which have participated in the previous competition.
-
-==== Organizing Committee
-The organizing committee of the Small Size League is responsible for preparing and organizing the competition. This mainly includes making the schedule, performing the qualification process, and running the competition. The committee members are selected by the <<Executive Committee, executive committee>> of the league and the RoboCup trustees.
-
-==== Local Organizing Committee
-The local organizing committee is responsible for planning and executing the event itself in accordance with the needs of the different leagues. This includes setting up the team areas (fields, network, tables, whiteboard, screens, etc.), creating a schedule for the event and implementing a safety and security concept.
-
-=== Divisions
-A summary of differences between the two divisions can be found in the <<Differences Between Divisions, Appendix>>.
+These regulations are a addition to the RoboCup SSL rules. Everything that is not described in these regulations must comply with the RoboCup SSL rules. Everything described in these regulations must be in accordance with them, despite possible contradictions. In case of contradictions between this regulation and the official one, it is worth referring to this regulation. The numbering of paragraphs in this regulation corresponds to the numbering in the official regulation. If a paragraph is omitted, it corresponds exactly to the paragraph in the official regulations, and if that paragraph implies a difference between Div. A and Div. B, the paragraph shall be interpreted as for Div. B. 

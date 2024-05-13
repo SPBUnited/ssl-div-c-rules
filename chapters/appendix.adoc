@@ -1,7 +1,7 @@
 [appendix]
 == Terminology
 === Ball Manipulation
-Shooting and <<Dribbling Device, dribbling>> is considered as manipulating the ball, the ball accidentally bouncing off the hull is not.
+Shooting is considered as manipulating the ball, the ball accidentally bouncing off the hull is not. Dribbling Device is banned in this division.
 
 [appendix]
 == Game States
@@ -100,7 +100,6 @@ NOTE: The information shown in this table here may be incomplete. Please read th
 || <<Multiple Defenders, DEFENDER_IN_DEFENSE_AREA>> | <<Ball In And Out Of Play, ball in play>> | <<Stop>> -> <<Penalty Kick>> | no | auto referee
 || <<Keeper Held Ball, KEEPER_HELD_BALL>> | <<Ball In And Out Of Play, ball in play>> | <<Stop>> -> <<Free Kick>> | yes | game controller
 || <<Boundary Crossing, BOUNDARY_CROSSING>> | <<Ball In And Out Of Play, ball in play>> | <<Stop>> -> <<Free Kick>> | yes | auto referee
-|| <<Excessive Dribbling, BOT_DRIBBLED_BALL_TOO_FAR>> | <<Ball In And Out Of Play, ball in play>> | <<Stop>> -> <<Free Kick>> | yes | auto referee
 || <<Attacker Touched Ball In Opponent Defense Area, ATTACKER_TOUCHED_BALL_IN_DEFENSE_AREA>> | <<Ball In And Out Of Play, ball in play>> | - | yes | auto referee
 || <<Ball Speed, BOT_KICKED_BALL_TOO_FAST>> | <<Ball In And Out Of Play, ball in play>> | - | yes | auto referee
 
@@ -165,3 +164,4 @@ This is a complete list of differences between division C and division B.
 * The automatic <<Ball Placement, ball placement>> procedure is optional for division B and absent for division C.
 * The <<aimless-kick, aimless kick>> rule only applies to division B (absent for division C).
 * Division C has the same timeouts.
+* Dribbling Device is banned in Division C
