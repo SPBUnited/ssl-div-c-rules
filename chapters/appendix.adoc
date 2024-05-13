@@ -120,12 +120,6 @@ NOTE: The information shown in this table here may be incomplete. Please read th
 || <<Robot Stop Speed, BOT_TOO_FAST_IN_STOP>> | during <<Stop>> | - | yes | auto referee
 || <<Defender Too Close To Ball, DEFENDER_TOO_CLOSE_TO_KICK_POINT>> | <<Ball In And Out Of Play, ball out of play>> | timer for bringing the ball into play is reset | yes | auto referee
 
-| 5+| *Ball Placement*
-|| <<Ball Placement Interference, BOT_INTERFERED_PLACEMENT>> | during <<Ball Placement>> | placement timer increased by 10 seconds | yes | auto referee
-|| <<Ball Placement, PLACEMENT_SUCCEEDED>> | during <<Ball Placement>> | continue | no | auto referee
-|| <<Ball Placement, PLACEMENT_FAILED>> by team in favor | during <<Ball Placement>> | <<Stop>> -> <<Free Kick>> (div A) / previous command (div B) | no | game controller
-|| <<Ball Placement, PLACEMENT_FAILED>> by opponent | during <<Ball Placement>> | <<Stop>> | no | game controller
-
 6+| *Informational*
 || <<Fouls, MULTIPLE_FOULS>> | - | <<Yellow Card>> | no | game controller
 || <<Yellow Card, MULTIPLE_CARDS>> | - | <<Red Card>> | no | game controller
@@ -150,24 +144,24 @@ A visualized graph of the game events is stored as https://raw.githubusercontent
 [appendix]
 == Overview of Timings
 |===
-| Situation                                                           | Div A Time | Div B Time
+| Situation                                                           | Div C Time
 
-| Remove robot for <<Yellow Card>>                                    | 10 s       | 10 s
-| <<Penalty Kick, penalty kick>>                                      | 10 s       | 10 s
-| <<Kick-Off, kick-off>>                                              | 10 s       | 10 s
-| <<Free Kick, free kick>>                                            |  5 s       | 10 s
-| <<Keeper Held Ball>> inside <<Defense Area>>                        |  5 s       | 10 s
-| <<No Progress In Game>>                                             |  5 s       | 10 s
+| Remove robot for <<Yellow Card>>                                    | 10 s
+| <<Penalty Kick, penalty kick>>                                      | 10 s
+| <<Kick-Off, kick-off>>                                              | 10 s
+| <<Free Kick, free kick>>                                            | 10 s
+| <<Keeper Held Ball>> inside <<Defense Area>>                        | 10 s
+| <<No Progress In Game>>                                             | 10 s
 |===
 
 
 [appendix]
-== Differences Between Divisions
+== Differences Between Divisions C and B
 
-This is a complete list of differences between <<Divisions, division>> A and <<Divisions, division>> B.
+This is a complete list of differences between division C and division B.
 
-* Division A plays on a <<Dimensions, larger field>> with <<Goals, larger goals>> than division B. As a result, a <<Penalty Kick, penalty kick>> is taken from a greater distance as well.
-* Division A plays with <<Number Of Robots, more robots>> than division B.
-* The automatic <<Ball Placement, ball placement>> procedure is mandatory for division A and optional for division B.
-* The <<aimless-kick, aimless kick>> rule only applies to division B.
-* Division A has shorter timeouts in some situations.
+* Division C plays on a <<Dimensions, smaller field>> with <<Goals, smaller goals>> than division B. As a result, a <<Penalty Kick, penalty kick>> is taken from a shorter distance.
+* Division C plays with <<Number Of Robots, less robots>> than division B.
+* The automatic <<Ball Placement, ball placement>> procedure is optional for division B and absent for division C.
+* The <<aimless-kick, aimless kick>> rule only applies to division B (absent for division C).
+* Division C has the same timeouts.

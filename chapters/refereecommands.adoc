@@ -28,65 +28,6 @@ The <<Game Controller, game controller>> will wait for up to 10 seconds after a 
 
 NOTE: As a rule of thumb, the game should always be halted when humans other than the referees are entering the field.
 
-
-=== Ball Placement
-.Definition
-After the game was stopped, the ball must be placed on the appropriate position, depending on the event that occurred.
-The automatic ball placement is the preferred way to place the ball at the designated position on the field by the robots of the teams without human interaction.
-If this is not possible, the <<Referee, referee>> places the ball manually.
-
-NOTE: During manual ball placement, the game should be in <<Stop, stop>> to allow robots to prepare for game continuation.
-
-No ball placement is required if all of the following constraints are fulfilled:
-
-* The ball is closer than 1m to the designated position.
-* The ball is inside the field.
-* The ball is at least 0.7m away from any defense area.
-* The ball is stationary.
-
-In this case, the game can be continued as soon as all robots keep the required distance for <<Stop, stop>>.
-
-A ball is considered placed successfully by the robots if
-
-* no more than 30 seconds passed since the placement command
-* there is no robot within 0.05 meters distance to the ball if the next command is a <<Free Kick, free kick>> for the placing team
-* there is no robot within 0.5 meters distance to the ball if the next command is a <<Force Start, force start>>
-* the ball is stationary
-* the ball is at a position within 0.15 meters radius from the requested position
-
-No further commands will be issued by the <<Game Controller, game controller>> until the automatic placement is complete.
-The game will be continued by the <<Game Controller, game controller>> as soon as the ball is successfully placed, but not earlier than 2 seconds after the ball placement command has been issued.
-A failed placement will result in a <<Free Kick, free kick>> for the opposing team.
-If this team failed to place the ball as well, the ball is placed by the <<Referee, referee>> and game continues with the original command.
-
-For each team a ball placement failure counter is incremented on each placement failure and decremented for successful placements. It can not get negative.
-
-The non-placing team must not <<Ball Placement Interference, interfere the ball placement task>>.
-
-.Usage
-When the ball goes <<Ball In And Out Of Play, out of play>>, the following rules decide, if automatic ball placement is applied:
-
-. The <<Referee, referee>> has to place the ball for all kickoffs and all penalty kicks
-. For a <<Free Kick, free kick>>, the team that brings the ball <<Ball In And Out Of Play, into play>> must place the ball
-. For a <<Force Start, force start>>, a team is drawn by chance and must place the ball
-. The ball must be visible and must not be inside a field corner, a goal corner or behind the goal, before the ball placement starts
-. The <<Referee, referee>> can decide to place the ball manually at any time
-. The <<Referee, referee>> can decide to disable automatic ball placement for the rest of the game. TC/OC must agree with this decision
-. When a teams placement failure counter reached 5, it is not allowed to place the ball for the rest of the game half. All free kicks that were a result of the ball leaving the field, are awarded to the opposing team. For all other rule violations or when both teams failed to place the ball, the ball is placed by the <<Referee, referee>>
-. If no team can place the ball, the ball is placed by the <<Referee, referee>> or the <<Assistant Referee, assistant referee>>. Both the referee as well as the assistant referee are advised to use a so-called ball handler (a long, preferably black stick-like device) to move the ball.
-
-NOTE: The ball may still be moving when the placement command is issued.
-
-NOTE: The game commences directly after ball placement. The team receiving the ball may shoot immediately and leave the opposing team little time to arrange defensive actions if needed.
-
-NOTE: It is allowed to enter the defense area during ball placement.
-
-Ball placement is mandatory for all teams in division A.
-Teams in division B may decide, at any time before or during the game, not to place the ball for the rest of the game by talking to the <<Referee, referee>>, who in turn tells the <<Game Controller Operator, game controller operator>> to disable ball placement for this team.
-In this case, the team is allowed to bring the ball into play, after the ball was placed by the opposing team.
-If the opposing team fails to place the ball or no team can place the ball, it is placed by the <<Referee, referee>> or the <<Assistant Referee, assistant referee>>.
-
-
 === Resuming The Game
 After the ball has been placed, the game is resumed using one of the following commands.
 
@@ -180,7 +121,7 @@ The match is resumed when
 * <<Force Start, force start>> has been issued.
 * the ball moved at least 0.05 meters following a <<Kick-Off, kick-off>>, <<Free Kick, free kick>> or <<Penalty Kick, penalty kick>>.
 * 10 seconds passed following a <<Kick-Off, kick-off>>.
-* 5 seconds (Division A) or 10 seconds (Division B) passed following a <<Free Kick, free kick>>.
+* 10 seconds passed following a <<Free Kick, free kick>>.
 
 NOTE: see <<Double Touch, double touch>> for the rationale of the 0.05 meter distance
 

@@ -25,8 +25,6 @@ After the ball has been placed, a <<Free Kick, free kick>> is awarded to the opp
 .Usage
 A goal kick is used to restart the game after the ball left the field by crossing the goal line of the team that did not touch the ball last.
 
-NOTE: In division B, the <<aimless-kick, aimless kick rule>> might apply instead.
-
 ==== Corner Kick
 .Definition
 The ball has to be placed 0.2 meters from the closest touch line and 0.2 meters from the goal line.
@@ -35,15 +33,3 @@ After the ball has been placed, a <<Free Kick, free kick>> is awarded to the opp
 
 .Usage
 A corner kick is used to restart the game after the ball left the field by crossing the goal line of the team that touched the ball last.
-
-[[aimless-kick, Aimless Kick]]
-==== Aimless Kick [small]#(_Division B only_)#
-.Definition
-The ball has to be placed at the position from where the ball was kicked (see the <<Free Kick, free kick>> rules for the exact ball position rules).
-
-After the ball has been placed, a <<Free Kick, free kick>> is awarded to the opponent of the team that last touched the ball before it left the field.
-
-.Usage
-A kick is aimless when after the ball touched a robot, it subsequently crossed the halfline and then its opponent's goal line outside the goal without touching another robot.
-
-A kick-off kick cannot be aimless, as the ball is located on the <<Halfway Line, halfway line>> and does therefore not cross it.
