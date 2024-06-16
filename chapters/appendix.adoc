@@ -1,7 +1,7 @@
 [appendix]
 == Terminology
 === Ball Manipulation
-Shooting is considered as manipulating the ball, the ball accidentally bouncing off the hull is not. Dribbling Device is banned in this division.
+Shooting is considered as manipulating the ball, the ball accidentally bouncing off the hull is not. Dribbling Device can only be used with the consent of both teams (if one of the teams does not agree, the second has no right to use the dribbler), a violation will result in the team receiving a yellow card.
 
 [appendix]
 == Game States
@@ -163,5 +163,6 @@ This is a complete list of differences between division C and division B.
 * Division C plays with <<Number Of Robots, less robots>> than division B.
 * The automatic <<Ball Placement, ball placement>> procedure is optional for division B and absent for division C.
 * The <<aimless-kick, aimless kick>> rule only applies to division B (absent for division C).
-* Division C has the same timeouts.
-* Dribbling Device is banned in Division C
+* Dribbling Device cannot be used in a match without the consent of both teams in Division C
+* <<Ball Speed, Max ball speed>> reduced to 3 m/s
+* <<Throw-In, Throw-In>> uses a <<Force Start, force start>> instead of a <<Free Kick, free kick>>.
