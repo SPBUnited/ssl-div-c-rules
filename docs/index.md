@@ -3,7 +3,5 @@
 ## 2024
 
 [HTML](sslrules.html) \
-[PDF](sslrules.pdf)
-
-[HTML2](../sslrules.html) \
-[PDF2](../sslrules.pdf)
+[PDF](sslrules.pdf) \
+[HTML diff](sslrules-diff.html)
